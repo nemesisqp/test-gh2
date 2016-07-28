@@ -9,6 +9,13 @@
   <meta name="keywords" content="{{ global.meta-tag.keywords }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<script type="text/javascript">
+	var baseHref = document.location.protocol + '//' + document.location.host;
+	var parts = document.location.href.split(/\//);
+	if (parts.length > 4) baseHref += '/' + parts[3];
+	document.write('<base href="' + baseHref + '" />');
+</script>
+
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/github.min.css">
@@ -58,10 +65,5 @@
     </div>
   </div>
 </body>
-<script type="text/javascript">
-	var baseHref = document.location.protocol + '//' + document.location.host;
-	var parts = document.location.href.split(/\//);
-	if (parts.length > 4) baseHref += '/' + parts[3];
-	document.write('<base href="' + baseHref + '" />');
-</script>
+
 </html>
