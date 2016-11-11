@@ -1,5 +1,1 @@
-AA
-BB
-CC
-DDD
-RRR
+AAA
